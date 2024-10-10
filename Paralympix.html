@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial.scale=1.0">
+        <title>Energi Expressen</title>
+        <style media="screen">
+
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: "century gothic";
+        }
+        html{
+
+            height: 100vh;
+        }
+        .nav{
+
+            position: fixed;
+            bottom: 0px;
+            background-color: rgba(0,0,0,0.7);
+            width: 100vw;
+            height: 50px;
+            padding-top: 10px;
+            text-align: center;
+            z-index: 1;
+
+        }
+        .nav a{
+
+            font-size: 25px;
+            text-decoration: none;
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .nav a:hover{
+
+            text-decoration: underline;
+        }
+        .bakgrunn1, .bakgrunn2, .bakgrunn3{
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bakgrunn1{
+
+            background-image: url(Bilder/Fint\ bilde.webp);
+            min-height: 100vh;
+
+        }
+        .bakgrunn2{
+
+            background-image: url(Bilder/Mann.webp);
+            min-height: 80vh;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        
+        }
+        .bakgrunn3{
+
+            background-image: url();
+            min-height: 30vh;
+            
+        }
+
+        .text1{
+
+            font-size: 50px;
+            letter-spacing: 20px;
+            font-weight: bold;
+            color: black;
+            text-align:justify;
+
+        }
+        .textboks1{
+
+            padding: 20px 10vw 20px 10vw;
+            text-align: center;
+            color: black;
+        }
+        .textboks1 h3{
+
+            text-align: center;
+            font-size: 40px;
+        }
+        .textboks1 p{
+
+            font-size: 20px;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="bakgrunn1">
+            <div class="boks1">
+            <span class="text1">EnergiExpressen</span>
+            </div>
+        </div>
+<div class="textboks1" style="background-color: white; color: black;">
+    <h3>Alltid Fornøyde Kunder</h3>
+    <p></p>
+
+</div>
+<div class="bakgrunn2">
+    <div class="boks1">
+    <span class="text1"></span>
+    </div>
+</div>
+<div class="textboks1">
+    <h3>Om oss</h3>
+    <br>
+    <p>Hos EnergiExpressen leverer vi energien du trenger, når du trenger det!Vi er et norsk selskap som spesialiserer oss på energidrikker, med et bredt utvalg som passer alle behov – enten du jobber, trener, studerer, eller bare vil ha en ekstra boost.
+
+        Vår målsetting er å gi deg kvalitet, smak og variasjon i hver slurk, med rask levering og enkel bestilling. Vi sørger for at du alltid er klar til å yte ditt beste.
+        </p>
+        <br>
+        <p>EnergiExpressen – din kilde til rask energi!</p>
+
+</div>
+<div class="bakgrunn3">
+    <div class="boks1">
+    <span class="text1"></span>
+    </div>
+</div>
+
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="index.html">Products</a>
+            <a href="#">Contact</a>
+
+        </div>
+
+
+
+
+
+
+        <script type="text/javascript">
+
+
+            var bilde = document.querySelector(".bakgrunn1")
+            window.addEventListener("scroll", reduserfart)
+
+            function reduserfart(){
+                var slep =window.pageYOffset
+                bilde.style.backgroundPositionY = slep*0.7 +"px";
+            }
+            
+
+
+        </script>
+        
+
+
+
+
+
+
+
+    </body>
+</html>
